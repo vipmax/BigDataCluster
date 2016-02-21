@@ -30,7 +30,7 @@
         srv.vm.synced_folder "../.", "/home/vagrant/project"
 
         srv.vm.provision "shell", path: "install-sshkey.sh"
-        srv.vm.provision "shell", path: "install-spark.sh"
+        
 
         srv.vm.provision "shell" do |s|
            update_hosts = ""

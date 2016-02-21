@@ -1,4 +1,9 @@
 ---
+- name: control
+  ram: 2048
+  cpus: 4
+  ip: 192.168.0.10
+
 - name: node1
   ram: 2048
   cpus: 2
