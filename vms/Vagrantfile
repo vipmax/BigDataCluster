@@ -42,7 +42,13 @@
            s.privileged = true
         end
 
-
+	if server["name"] == 'control' 
+          srv.vm.provision "shell" do |s|
+            s.inline = "apt-add-repository ppa:ansible/ansible -y; apt-get update -y; apt-get install ansible -y;"
+            s.privileged = true
+          end
+        end
+    	
       end
     end
   end
