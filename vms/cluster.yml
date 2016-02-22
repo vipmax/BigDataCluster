@@ -1,5 +1,5 @@
 ---
-- name: control
+- name: controlvm
   ram: 2048
   cpus: 4
   ip: 192.168.0.10

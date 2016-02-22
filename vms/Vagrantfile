@@ -30,7 +30,7 @@
         srv.vm.synced_folder "../.", "/home/vagrant/project"
 
         srv.vm.provision "shell", path: "install-sshkey.sh"
-        
+        srv.vm.provision "shell", path: "install-java.sh"
 
         srv.vm.provision "shell" do |s|
            update_hosts = ""
@@ -42,7 +42,7 @@
            s.privileged = true
         end
 
-	if server["name"] == 'control' 
+	if server["name"] == 'controlvm' 
           srv.vm.provision "shell" do |s|
             s.inline = "apt-add-repository ppa:ansible/ansible -y; apt-get update -y; apt-get install ansible -y;"
             s.privileged = true
