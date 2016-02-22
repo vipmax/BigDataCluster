@@ -1,0 +1,9 @@
+---
+
+# hosts in the zookeeper group
+- name: deploy and configure the zookeeper hosts
+  hosts: zookeepers
+  sudo: True
+
+  roles:
+    - { role: zookeeper, zookeeper_action: "install", tags: ["zookeeper"] }

@@ -1,22 +1,25 @@
 [mesos_masters]
-node1
+master[1:2]
 
 [mesos_slaves]
-node[2:3]
-
+slave[1:2]
 
 
 [hdfs_namenodes]
-node1
+master1
 
 [hdfs_datanodes]
-node[2:3]
+slave[1:2]
 
 
 [spark_masters]
-node1
+master1
 
 [spark_slaves]
-node[2:3]
+slave[1:2]
+
+[zookeepers]
+master1 zoo_id=1
+master2 zoo_id=2
 
 

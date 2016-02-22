@@ -4,17 +4,22 @@
   cpus: 4
   ip: 192.168.0.10
 
-- name: node1
+- name: master1
   ram: 2048
   cpus: 2
   ip: 192.168.0.11
 
-- name: node2
+- name: master2
   ram: 2048
   cpus: 2
   ip: 192.168.0.12
 
-- name: node3
+- name: slave1
   ram: 2048
   cpus: 2
   ip: 192.168.0.13
+
+- name: slave2
+  ram: 2048
+  cpus: 2
+  ip: 192.168.0.14
