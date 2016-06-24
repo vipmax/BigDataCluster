@@ -22,4 +22,6 @@ slave[1:2]
 master1 zoo_id=1
 master2 zoo_id=2
 
-
+[cassandra]
+master1
+slave[1:2]

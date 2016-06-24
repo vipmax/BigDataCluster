@@ -25,8 +25,7 @@
           vb.cpus = server["cpus"]
         end
 
-        srv.vm.network "private_network", ip: server["ip"]
-        srv.vm.network "forwarded_port", guest: 8080, host: 8080, auto_correct: true
+        srv.vm.network "public_network", ip: server["ip"]
 		srv.vm.synced_folder "../.", "/home/vagrant/project", :mount_options => ["dmode=700","fmode=600"]
 
 
